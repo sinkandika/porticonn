@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+
+:root {
+  font-family: 'Inter Variable', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+
+@theme {
+  --color-background: #F0F0F2;
+  --color-primary: #3F3F4F;
+  --color-primary-h: #53536D;
+  --color-secondary: #6B6B7F;
+  --color-secondary-h: #383866;
+  --color-third: #4242EA;
+  --color-third-h: #2727C4;
+
+  --color-hover: #F8F8FF;
+
+  --color-cancel: #D3463C;
+  --color-cancel-h: #C61C18;
+  
+  --color-error: #F23636;
+
+  --color-disable-button: #CBCBD3;
+
+  --color-brdr:#CBCBD3;
+  --color-brdr-h: #53536D;
+
+  --color-progress-pending: #E0B500;
+  --color-progress-on-progress: #4242EA;
+  --color-progress-overdue: #D3463C;
+  --color-progress-complete: #3DC46D;
+
+  --font-inter: 'Inter Variable', sans-serif;
+}
