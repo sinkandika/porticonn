@@ -1,7 +1,7 @@
 import { dateFormat } from "../../utils/dateU";
 import CloseIcon from "../../assets/close-icon.svg"
 import AlertIcon from "../../assets/alert-icon.svg"
-import LoadingIcon from "../../assets/loading-icon.svg"
+import LoadingIcon from "../../assets/loading-icon2.svg"
 import TimeIcon from "../../assets/time-icon.svg"
 import FlagIcon from "../../assets/flag-icon.svg"
 import { getStatusColor } from "../../utils/statusU";

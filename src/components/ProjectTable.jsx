@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import LoadingIcon from "../assets/loading-icon.svg"
+import LoadingIcon from "../assets/loading-icon2.svg"
 import { getStatusColor } from "../utils/statusU";
 import { getProjectStatus } from "../utils/projectU";
 
