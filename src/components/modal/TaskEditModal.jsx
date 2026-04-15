@@ -2,7 +2,7 @@ import { useState } from "react"
 import { updateTask } from "../../services/taskService";
 import CloseIcon from "../../assets/close-icon.svg"
 import AlertIcon from "../../assets/alert-icon.svg"
-import LoadingIcon from "../../assets/loading-icon.svg"
+import LoadingIcon from "../../assets/loading-icon.svg";
 import TimeIcon from "../../assets/time-icon.svg"
 import FlagIcon from "../../assets/flag-icon.svg"
 import { dateFormat } from "../../utils/dateU";
