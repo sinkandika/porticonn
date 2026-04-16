@@ -160,11 +160,11 @@ export default function Projects () {
           <img 
           src={PorticonIcon} 
           alt="icon"
-          className="w-6 block lg:hidden" 
+          className="w-6 block lg:hidden " 
           />
         </div>
   
-        <div className="flex gap-20 font-medium text-primary">
+        <div className="flex lg:gap-x-20 gap-x-10 font-medium text-primary">
           <div className="flex 2xl:gap-x-20 gap-x-10 items-center">
             <ProjectDropdown
               label="Create"
@@ -190,11 +190,10 @@ export default function Projects () {
             )}
           </div>
           <div className="flex gap-4 items-center">
-            <h1>{user.displayName}</h1>
+            <p className="hidden md:block">{user.displayName}</p>
             <UserDropdown />
           </div>
         </div>
-
       </div>
 
       <div className="px-3 py-4 h-full">
@@ -210,22 +209,20 @@ export default function Projects () {
             }}
             />
           </div>
-          <div className="">
-            <div className="border border-primary w-sm flex flex-row px-4 rounded-md">
+            <div className="relative w-full">
               <img
               src={searchIcon}
-              alt="search"
-              className="w-5 opacity-70"
+              alt="src"
+              className="w-5 absolute left-2 translate-y-1/2 opacity-50"
               />
               <input
-                type="text"
-                placeholder="Search projects..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="p-2 w-full outline-none text-primary"
-              />
+              type="text"
+              placeholder="Search task"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="border px-3 py-2 pl-10 rounded-md focus:border-third-h outline-none lg:w-md"
+            />
             </div>
-          </div>
           <div>
             <ProjectTable
             projects={paginatedProjects} // project(database) -> filteredProject -> paginatedProjects

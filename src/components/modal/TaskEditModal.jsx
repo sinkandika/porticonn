@@ -14,6 +14,7 @@ const TaskEditmodal = ({ isOpen, onClose, task, projectId }) => {
   const [deadline, setDeadline] = useState(task.deadline || "");
   const [status, setStatus] = useState(task.status || "Pending");
 
+  // alert UI
   const [isClicked, setIsClicked] = useState(false);
   const [alertOpen, setAlertOpen] = useState(false);
   const [error, setError] = useState(false);
@@ -77,20 +78,20 @@ const TaskEditmodal = ({ isOpen, onClose, task, projectId }) => {
         <div className="border-b-2 border-background"></div>
         <form
          onSubmit={handleUpdate}
-         className="font-medium flex flex-col gap-y-5"
+         className="`font-medium flex flex-col gap-y-5`"
         >
 
           <input
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="border border-brdr text-xl text-primary p-2"
+          className="border border-brdr text-primary outline-third p-2"
           />
 
           <textarea
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-          className="border border-brdr min-h-30 text-secondary p-2"
+          className="border border-brdr min-h-30 text-primary outline-third p-2"
           />
           <div className="flex justify-between">
             <div className="relative">

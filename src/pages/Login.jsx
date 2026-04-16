@@ -9,8 +9,8 @@ import GoogleLogo from "../assets/google-logo.svg";
 
 export default function Login() {
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("sinkandika@porticonn.com");
+  const [password, setPassword] = useState("123456");
   const [error, setError] = useState("");
 
   const navigate = useNavigate();

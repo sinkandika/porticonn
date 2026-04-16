@@ -25,7 +25,7 @@ const ProjectCreateModal = ({onClose}) => {
 			return;
 		}
 		if (startDate > deadline) {
-			setError("why is the start date earlier than the deadline?");
+			setError("why is the deadline earlier than the start date?");
 			return;
 		}
 

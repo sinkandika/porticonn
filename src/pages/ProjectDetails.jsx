@@ -288,7 +288,7 @@ export default function ProjectDetails () {
 
   // host and member rule
   const isOwner = project.ownerId === user.uid; // if ownerId and user.uid identical, it will make ownerID = true and show host page
-  const isMember = project.members.includes(user.uid); // member view (host can saw too)
+  /*const isMember = project.members.includes(user.uid); // member view (host can saw too)*/
 
   // block outsider
   if (!project.members.includes(user.uid)) {
